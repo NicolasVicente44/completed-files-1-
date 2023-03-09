@@ -1,0 +1,11 @@
+CREATE TABLE `comp_1006`.`bookings` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `first_name` VARCHAR(50) NOT NULL,
+  `last_name` VARCHAR(50) NOT NULL,
+  `date_of_birth` DATE NOT NULL,
+  `email` VARCHAR(255) NOT NULL,
+  `requested_date_and_time` DATETIME NOT NULL,
+  `message` VARCHAR(2000) NULL,
+  `created_at` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `updated_at` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`));
